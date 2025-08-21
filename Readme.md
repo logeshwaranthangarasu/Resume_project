@@ -1,0 +1,1 @@
+Deployedurl: https://resume-project-smoky.vercel.app/
