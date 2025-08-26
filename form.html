@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+<body>
+
+    <form action="/savefile" method="post">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="uname">
+        <br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="paswd" name="pwd">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="mail">
+        <br>
+        <label for="count">Count:</label>
+        <input type="number" min="10" max="30" id="count" name="count">
+        <br>
+        <label for="courses">Select Course:</label>
+        <select name="course" id="courses">
+            <option value="">select</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+        </select>
+        <br>
+        <label for="describe">Describe:</label>
+        <textarea name="desc" id="describe" id="" cols="30" rows="5"></textarea>
+
+        <fieldset>
+            <legend>Checkbox:</legend>
+            <label for="reading">HTML</label>
+            <input type="checkbox" id="readinghtml" name="course" value="html">
+            <label for="reading">CSS</label>
+            <input type="checkbox" id="readingcss" name="course" value="css">
+            <label for="reading">JS</label>
+            <input type="checkbox" id="readingjs" name="course" value="js">
+        </fieldset>
+        <br>
+
+        <label for="male">Male:</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">Female:</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br>
+
+        <label for="rangebar">Range picker:</label>
+        <input type="range" min="0" max="100" id="rangebar" step="5" name="rangebar">
+        <br>
+        
+        <label for="filepicker"></label>
+        <input type="file" name="filepicker" id="filepicker" accept=".pdf">
+
+        <br>
+        <button type="submit">Submit</button>
+        <input type="reset" name="clear" >
+
+    </form>
+    
+</body>
+</html>
